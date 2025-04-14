@@ -1,0 +1,120 @@
+/* إعداد خلفية الصفحة */
+body {
+    background-image: url('img/PAGE1.jpg'); /* صورة الخلفية */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+    background-size: 100%; /* ملء الشاشة */
+    flex-direction: column; /* اتجاه العناصر عمودياً (لو استخدمت display:flex) */
+}
+
+/* تصميم شريط التنقل العلوي */
+.home {
+    padding: 5px 20px; /* تقليل الارتفاع الداخلي */
+    color: #5f2381; /* لون النص */
+    display: flex; /* استخدام فليكس لتوزيع العناصر */
+    justify-content: center; /* توسيط العناصر أفقياً */
+    align-items: center; /* توسيط العناصر عمودياً */
+    background-color: rgb(158, 149, 149); /* لون خلفية الشريط */
+    border-radius: 0; /* إلغاء الانحناء */
+    width: 100%; /* عرض كامل */
+    height: 50px; /* ارتفاع الشريط */
+    position: fixed; /* تثبيت في أعلى الصفحة */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* وضعه فوق كل العناصر */
+    gap: 190px; /* مسافة بين الروابط */
+}
+
+/* تنسيق الروابط داخل الشريط */
+.home a {
+    margin-top: 10px;
+    text-decoration: none; /* إزالة الخط السفلي */
+    color: white; /* لون النص */
+}
+
+/* تأثير عند تمرير الماوس على الرابط */
+.home a:hover {
+    background-color: #5f2381; /* تغيير لون الخلفية */
+    border-radius: 10px; /* انحناء الخلفية */
+    padding-left: 3px; /* مسافة داخلية صغيرة */
+}
+
+/* تنسيق عنوان الموقع داخل الشريط */
+.home h3 {
+    margin-right: 0;
+    padding: 0;
+}
+
+/* تنسيق قسم الترحيب */
+.wlecome {
+    padding-top: 190px; /* إزاحة للأسفل بسبب الشريط الثابت */
+    height: 50px;
+    color: #5f2381;
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 450px;
+    font-size: 13px;
+}
+
+/* عنوان كبير داخل الترحيب */
+.wlecome h1 {
+    margin-left: 20px;
+}
+
+/* عنوان فرعي داخل الترحيب */
+.wlecome h2 {
+    margin-left: 10px;
+}
+
+/* تنسيق صندوق تسجيل الدخول */
+.log {
+    margin-left: 170px;
+    padding: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* عنوان فرعي داخل تسجيل الدخول */
+.log h3 {
+    color: #5f2381;
+    padding: 0px;
+}
+
+/* العنوان الرئيسي لتسجيل الدخول */
+.log h1 {
+    margin-left: 60px;
+}
+
+/* روابط تسجيل الدخول والتسجيل */
+.log a {
+    text-decoration: none;
+    color: #5f2381;
+    padding: 1px;
+}
+
+/* تنسيق حقل الإيميل */
+input[type="email"] {
+    width: 280px;
+    background-position: 10px center; /* مكان الأيقونة إذا فيه خلفية */
+}
+
+/* تنسيق حقل كلمة السر */
+input[type="password"] {
+    width: 140px;
+}
+
+/* تنسيق زر الدخول */
+.log button {
+    text-align: center;
+    background-color: #5f2381;
+    color: aliceblue;
+    padding: 3px;
+    margin: 10px;
+    margin-left: 100px;
+    border-color: white;
+    margin-top: 10px;
+}
+
+/* تنسيق النص والرابط داخل فقرة تسجيل الدخول */
+.log p, a {
+    margin-left: 1px;
+}

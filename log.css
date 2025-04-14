@@ -1,0 +1,80 @@
+
+body {
+    background-color: #591499;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #591499;
+}
+
+.main {
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    flex-direction: column;
+    margin: 110px;
+    margin-top: 200px;
+    margin-left: 700px;
+    outline: none;
+    padding: 40px;
+    width: 400px;
+}
+
+.Branch {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+img {
+    display: none; /* Hide original image as it's now part of input */
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 40px 10px 40px; /* Add padding for space around image */
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-position: 10px center; /* Position image inside input */
+    background-repeat: no-repeat;
+    background-size: 20px 20px; /* Adjust size of the image */
+}
+
+/* Assigning background images for the respective inputs */
+#NAME {
+    background-image: url('img/username.png');
+}
+
+#E-mail {
+    background-image: url('img/email.png');
+}
+
+#pass {
+    background-image: url('img/password.png');
+}
+
+#confirm {
+    background-image: url('img/confirm.png');
+}
+button{
+margin-top: 30px;
+background-color: #591499;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #ccc;
+padding: 10px 40px 10px 40px; /* Add padding for space around image */
+background-size: 30px 30px;
+width:400px;
+border-color: #ccc;
+}
+a{
+    color: #591499;
+}

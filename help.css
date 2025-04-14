@@ -1,0 +1,60 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: Arial, sans-serif; /* نوع الخط */
+    max-width: 800px; /* أقصى عرض للمحتوى */
+    margin: 20px auto; /* توسيط الصفحة */
+    padding: 0 20px; /* مسافة من الجانبين */
+    background-color: #591499; /* لون خلفية الصفحة */
+    color: white; /* لون الخط */
+}
+
+/* تنسيق العنوان الرئيسي */
+.title {
+    text-align: center; /* توسيط العنوان */
+    color: #ffffff; /* لون العنوان */
+    border-bottom: 2px solid #9da4a8; /* خط تحت العنوان */
+    padding-bottom: 10px; /* مسافة تحت العنوان */
+    font-size: 30px; /* حجم الخط */
+}
+
+/* كل عنصر من عناصر الأسئلة */
+.faq-item {
+    border-bottom: 1px solid #eee; /* خط أسفل كل سؤال */
+    padding: 10px; /* حشوة داخلية */
+    cursor: pointer; /* شكل المؤشر عند المرور */
+    width: 75%; /* عرض العنصر */
+    margin-left: 100px; /* إزاحة لليسار */
+    margin-bottom: 50px; /* مسافة بين العناصر */
+}
+
+/* تنسيق السؤال */
+.question {
+    display: flex; /* ترتيب العناصر أفقياً */
+    justify-content: space-between; /* توزيع المسافة بين العناصر */
+    align-items: center; /* توسيط عمودي للعناصر */
+}
+
+/* السهم الموجود بجانب السؤال */
+.arrow {
+    font-size: 40px; /* حجم السهم */
+    transition: transform 0.3s ease; /* تأثير دوران السهم */
+    margin-left: 15px; /* مسافة يسار السهم */
+}
+
+/* تنسيق الإجابة المخفية */
+.answer {
+    max-height: 0; /* إخفاء الإجابة */
+    overflow: hidden; /* منع ظهور الزائد */
+    transition: max-height 0.3s ease; /* تأثير عند إظهار الإجابة */
+    color: #ffffff; /* لون النص */
+    padding-right: 20px; /* مسافة من اليمين */
+}
+
+/* عند تفعيل العنصر (مثلاً عند الضغط عليه) */
+.active .arrow {
+    transform: rotate(90deg); /* تدوير السهم */
+}
+
+.active .answer {
+    max-height: 700px; /* إظهار الإجابة */
+}

@@ -1,0 +1,98 @@
+/* إعداد الخلفية والخط */
+body {
+    background-color: #591499;
+    font-family: Arial, sans-serif;
+    
+    /* توسيط كامل للصفحة */
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center;     /* توسيط عمودي */
+    height: 100vh;           /* امتداد كامل الشاشة */
+    margin: 0;
+}
+
+/* العنوان */
+h1 {
+    color: #591499;
+}
+
+/* العنصر الرئيسي */
+.main {
+    background-color: white;
+    text-align: center;
+    display: flex;              /* Flex لتوسيط العناصر الداخلية */
+    flex-direction: column;
+    outline: none;
+    padding: 40px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+/* تنسيق الحقول */
+.Branch {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* إخفاء الصور لأننا نستخدمها كخلفية داخل input */
+img {
+    display: none;
+}
+
+/* تنسيق عنوان كل حقل */
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* تنسيق الحقول */
+input {
+    width: 100%;
+    padding: 10px 40px; /* مساحة على اليمين واليسار */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-position: 10px center; /* موقع صورة الخلفية */
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+/* صور كخلفية للحقول */
+#NAME {
+    background-image: url('img/username.png');
+}
+
+#E-mail {
+    background-image: url('img/email.png');
+}
+
+#pass {
+    background-image: url('img/password.png');
+}
+
+#confirm {
+    background-image: url('img/confirm.png');
+}
+
+/* تنسيق زر التسجيل */
+button {
+    margin-top: 30px;
+    background-color: #591499;
+    font-family: 'Lucida Sans', sans-serif;
+    color: #ccc;
+    padding: 10px 40px;
+    background-size: 30px 30px;
+    width: 100%;
+    border-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* تنسيق الروابط */
+a {
+    color: #591499;
+    text-decoration: none;
+}

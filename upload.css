@@ -1,0 +1,88 @@
+/* إعداد خلفية الصفحة */
+body {
+  background-image: url(img/page22.jpg); /* صورة الخلفية */
+  background-size: 100%; /* تغطية العرض الكامل */
+  background-repeat: no-repeat; /* منع تكرار الخلفية */
+  justify-content: center; /* توسيط العناصر أفقياً */
+  align-items: center; /* توسيط العناصر عمودياً */
+  height: 100vh; /* جعل الصفحة بطول كامل الشاشة */
+  margin: 0; /* إزالة الهوامش */
+  display: flex;
+  flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+}
+
+/* تنسيق العنوان الرئيسي */
+.introduction {
+  font-size: 70px; /* حجم الخط */
+  margin-right: 700px; /* إزاحة لليمين */
+  color: #0077B6; /* لون الخط */
+  margin-top: 150px; /* مسافة من الأعلى */
+  text-align: center; /* توسيط النص */
+  margin-left: 20px; /* إزاحة لليسار */
+}
+
+/* حاوية المحتوى الرئيسية */
+.container {
+  display: flex;
+  flex-direction: column; /* ترتيب عمودي للعناصر */
+  align-items: center; /* توسيط العناصر أفقياً */
+  width: 100%; /* العرض الكامل */
+}
+
+/* تنسيق النص التوضيحي */
+.text {
+  width: 75%; /* عرض 75% من الصفحة */
+  font-size: 30px; /* حجم الخط */
+  text-align: left; /* محاذاة لليسار */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px; /* مسافة تحت النص */
+  margin-right: 270px; /* إزاحة لليمين */
+}
+
+/* تنسيق قسم رفع الملفات */
+.file {
+  width: 10%; /* عرض صغير (تقدر تزيده لو تبي input يكون أعرض) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 570px; /* إزاحة لليمين */
+  margin-bottom: 120px; /* مسافة تحتية */
+}
+
+/* زر الرفع داخل .file */
+.file button {
+  margin-top: 15px; /* مسافة من الأعلى */
+  padding: 5px; /* حشوة داخل الزر */
+}
+
+/* حقل إدخال الملف */
+.file input {
+  margin-top: 15px; /* مسافة من الأعلى */
+  padding: 10px; /* حشوة داخلية */
+  color: #000000; /* لون الخط داخل الحقل */
+}
+
+/* زر رفع الملف عند الضغط */
+.unload {
+  border: none; /* بدون حدود */
+  cursor: pointer; /* شكل المؤشر عند المرور */
+}
+
+/* تنسيق صورة داخل قسم الملف */
+.file img {
+  width: 60%; /* عرض الصورة */
+}
+
+/* تنسيق عام لكل الأزرار */
+button {
+  background-color: #0077B6; /* لون خلفية الزر */
+  color: aliceblue; /* لون النص */
+  border: none; /* بدون حدود */
+  margin-left: 50px; /* إزاحة لليسار */
+  margin: 45px; /* هامش خارجي */
+}
+
+/* تنسيق الحقول (input) */
+input {
+  color: #0077B6; /* لون النص داخل الحقول */
+}
